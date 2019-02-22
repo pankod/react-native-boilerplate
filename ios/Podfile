@@ -8,7 +8,8 @@ target 'ReactNativeBoilerplate' do
   # Pods for ReactNativeBoilerplate
 
   pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
-  
+  pod 'RNI18n', :path => '../node_modules/react-native-i18n'
+
   target 'ReactNativeBoilerplate-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
