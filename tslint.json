@@ -148,7 +148,7 @@
 			true,
 			140
 		],
-		"no-default-export": true,
+		"no-default-export": false,
 		"no-mergeable-namespace": true,
 		"no-require-imports": false,
 		"object-literal-sort-keys": true,
@@ -191,7 +191,7 @@
 			"check-uppercase"
 		],
 		"completed-docs": [
-			true,
+			false,
 			"functions",
 			"methods"
 		],

@@ -1,5 +1,7 @@
+// Global imports
 import I18nClient from 'react-native-i18n';
 
+// Local imports
 import { EN, TR } from '@App/I18n/Languages';
 
 I18nClient.fallbacks = true;
