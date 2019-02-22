@@ -32,7 +32,9 @@ local.properties
 
 # Visual Studio Code
 #
-.vscode/
+# Debugger
+.vscode/.react/index*
+.vscode/.react/debuggerWorker.js
 
 # node.js
 #
