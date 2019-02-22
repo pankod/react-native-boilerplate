@@ -1,0 +1,66 @@
+{
+  "name": "ReactNativeBoilerplate",
+  "version": "0.0.1",
+  "private": false,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "clear": "watchman watch-del-all && rm -rf /tmp/metro-bundler-cache-* && rm -rf /tmp/haste-map-react-native-packager-* && react-native start --reset-cache"
+  },
+  "dependencies": {
+    "react": "16.6.3",
+    "react-native": "0.58.5"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.3.3",
+    "@babel/plugin-proposal-decorators": "^7.3.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/enzyme": "^3.1.18",
+    "@types/enzyme-adapter-react-16": "^1.0.4",
+    "@types/jest": "24.0.6",
+    "@types/react": "16.8.4",
+    "@types/react-native": "0.57.37",
+    "@types/react-test-renderer": "16.8.1",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "24.1.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.9.1",
+    "jest": "24.1.0",
+    "jest-fetch-mock": "^2.1.1",
+    "metro-react-native-babel-preset": "^0.52.0",
+    "react-dom": "^16.8.3",
+    "react-test-renderer": "16.6.3",
+    "ts-jest": "^24.0.0",
+    "typescript": "3.3.3333"
+  },
+  "jest": {
+    "preset": "react-native",
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js",
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.jest.json"
+      }
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "modulePaths": [
+      "<rootDir>"
+    ],
+    "setupFiles": [
+      "./tests/setup.js"
+    ]
+  }
+}
