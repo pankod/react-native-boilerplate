@@ -3,12 +3,15 @@ import React, { Component } from 'react';
 import { Text, View } from 'react-native';
 import { connect } from 'react-redux';
 
+// Local Styles
+import { ContainerCenter } from '@Assets/Styles';
+
 class RegisterComponent extends Component {
 	public render(): JSX.Element {
 		return (
-			<View>
+			<ContainerCenter>
 				<Text> Register Page </Text>
-			</View>
+			</ContainerCenter>
 		);
 	}
 }
