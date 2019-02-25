@@ -14,6 +14,8 @@
 		"react-native": "0.58.5",
 		"react-native-gesture-handler": "^1.0.16",
 		"react-native-i18n": "^2.0.15",
+		"react-native-svg": "^9.2.4",
+		"react-native-svg-uri": "^1.2.3",
 		"react-navigation": "^3.3.0",
 		"react-navigation-redux-helpers": "^3.0.0",
 		"react-redux": "^6.0.1",

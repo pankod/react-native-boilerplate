@@ -32,6 +32,7 @@ target 'ReactNativeBoilerplate' do
 
   pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
   pod 'RNI18n', :path => '../node_modules/react-native-i18n'
+  pod 'RNSVG', :path => '../node_modules/react-native-svg'
 
 end
 
