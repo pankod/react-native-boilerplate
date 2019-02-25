@@ -1,6 +1,7 @@
 // Global Imports
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
+import SplashScreen from 'react-native-splash-screen';
 
 // Local Imports
 import AppContainer from '@App/Router';
@@ -13,6 +14,11 @@ import { SafeArea } from '@Assets/Styles';
 const store = configureStore({});
 
 export default class App extends Component<{}> {
+
+	public componentDidMount(): void {
+		SplashScreen.hide();
+	}
+
 	public render(): JSX.Element {
 		return (
 			<Provider store={store}>

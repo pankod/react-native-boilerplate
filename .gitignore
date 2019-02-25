@@ -64,7 +64,6 @@ buck-out/
 
 
 # android offline bundler
-android/app/src/main/res
 android/app/src/main/assets
 
 # ios ignored index folder
