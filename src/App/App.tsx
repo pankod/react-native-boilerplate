@@ -1,9 +1,10 @@
 // Global Imports
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native';
 import { Provider } from 'react-redux';
 
 // Local Imports
+import AppContainer from '@App/Router';
 import configureStore from '@App/Store';
 
 // Configure Store
@@ -13,9 +14,7 @@ export default class App extends Component<{}> {
 	public render(): JSX.Element {
 		return (
 			<Provider store={store}>
-				<View>
-					<Text>test</Text>
-				</View>
+				<AppContainer />
 			</Provider>
 		);
 	}

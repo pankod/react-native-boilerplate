@@ -69,6 +69,7 @@ android/app/src/main/assets
 
 # ios ignored index folder
 ios/Index
+ios/Podfile.lock
 
 # ios Pods folder
 Pods
