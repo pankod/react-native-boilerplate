@@ -6,6 +6,7 @@ import SplashScreen from 'react-native-splash-screen';
 // Local Imports
 import AppContainer from '@App/Router';
 import configureStore from '@App/Store';
+import RouterActions from '@App/Services/RouterActions';
 
 // Local Styles
 import { SafeArea } from '@Assets/Styles';
@@ -23,7 +24,7 @@ export default class App extends Component<{}> {
 		return (
 			<Provider store={store}>
 				<SafeArea>
-					<AppContainer />
+					<AppContainer ref={(ref) => RouterActions.setNavigationReference(ref)} />
 				</SafeArea>
 			</Provider>
 		);

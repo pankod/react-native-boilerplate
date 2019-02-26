@@ -4,9 +4,9 @@ import { createAppContainer, createDrawerNavigator, createStackNavigator } from 
 // import { reduxifyNavigator, createReactNavigationReduxMiddleware, createNavigationReducer } from 'react-navigation-redux-helpers';
 
 // Local Imports
-import Home from '@App/Scenes/Home/index';
+import Home from '@App/Scenes/Home';
 import Login from '@App/Scenes/Login';
-import Register from '@App/Scenes/Register/index';
+import Register from '@App/Scenes/Register';
 
 const AppStackNavigator = createStackNavigator(
 	{

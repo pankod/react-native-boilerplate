@@ -5,15 +5,16 @@ import { connect } from 'react-redux';
 
 // Local Styles
 import { ContainerCenter, PrimaryButton, SecondaryButton, ButtonText } from '@Assets/Styles';
+import RouterActions from '@App/Services/RouterActions';
 
 class LoginComponent extends Component<{}, {}> {
 	public render(): JSX.Element {
 		return (
 			<ContainerCenter>
-				<PrimaryButton onPress={() => this.props.navigation.navigate('Register')} style={{ marginBottom: 10 }}>
+				<PrimaryButton onPress={() => RouterActions.push('Register')} style={{ marginBottom: 10 }}>
 					<ButtonText>Register</ButtonText>
 				</PrimaryButton>
-				<SecondaryButton onPress={() => this.props.navigation.replace('Home')}>
+				<SecondaryButton onPress={() => RouterActions.replace('Home')}>
 					<ButtonText>Home</ButtonText>
 				</SecondaryButton>
 			</ContainerCenter>
