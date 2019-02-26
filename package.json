@@ -12,6 +12,7 @@
 	"dependencies": {
 		"react": "^16.8.1",
 		"react-native": "0.58.5",
+		"react-native-code-push": "^5.5.2",
 		"react-native-device-info": "^0.26.4",
 		"react-native-gesture-handler": "^1.0.16",
 		"react-native-i18n": "^2.0.15",

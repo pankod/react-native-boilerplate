@@ -1,5 +1,5 @@
 import { AppRegistry } from 'react-native';
-import App from './src/App/App';
+import { App } from './src/App/App';
 import { name as appName } from './app.json';
 
 // To see all the requests in the chrome Dev tools in the network tab.

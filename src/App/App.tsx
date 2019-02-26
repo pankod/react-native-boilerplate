@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import SplashScreen from 'react-native-splash-screen';
+import codePush from "react-native-code-push";
 
 // Local Imports
 import AppContainer from '@App/Router';
@@ -14,7 +15,7 @@ import { SafeArea } from '@Assets/Styles';
 // Configure Store
 const store = configureStore({});
 
-export default class App extends Component<{}> {
+export class App extends Component<{}> {
 
 	public componentDidMount(): void {
 		SplashScreen.hide();
@@ -30,3 +31,5 @@ export default class App extends Component<{}> {
 		);
 	}
 }
+
+App = codePush(App);
