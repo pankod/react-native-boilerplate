@@ -2,9 +2,9 @@
 import { Reducer } from 'redux';
 
 // Local Imports
-import { IAction } from '@App/Interfaces';
+import { IAction } from '@App/Interfaces/Actions';
 
-type IReducer<S, A> = (state: S, action: IAction<A>) => S;
+export type IReducer<S, A> = (state: S, action: IAction<A>) => S;
 
 export interface ICombineReducers {
 	[key: string]: Reducer<{}>;
