@@ -25,7 +25,7 @@ export class App extends Component<{}> {
 		return (
 			<Provider store={store}>
 				<SafeArea>
-					<AppContainer ref={(ref) => RouterActions.setNavigationReference(ref)} />
+					<AppContainer ref={(ref: object) => RouterActions.setNavigationReference(ref)} />
 				</SafeArea>
 			</Provider>
 		);

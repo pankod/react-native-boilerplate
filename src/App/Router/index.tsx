@@ -1,7 +1,6 @@
 // Global Imports
 import React from 'react';
 import { createAppContainer, createDrawerNavigator, createStackNavigator } from 'react-navigation';
-// import { reduxifyNavigator, createReactNavigationReduxMiddleware, createNavigationReducer } from 'react-navigation-redux-helpers';
 
 // Local Imports
 import Home from '@App/Scenes/Home';
