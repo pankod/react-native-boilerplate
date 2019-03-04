@@ -1,0 +1,40 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"isolatedModules": false,
+		"jsx": "react",
+		"lib": [
+			"es6"
+		],
+		"moduleResolution": "node",
+		"noEmit": true,
+		"strict": true,
+		"target": "esnext",
+		"sourceMap": true,
+		"experimentalDecorators": true,
+		"forceConsistentCasingInFileNames": true,
+		"importHelpers": true,
+		"baseUrl": "./src",
+		"paths": {
+			"@App/*": [
+				"App/*"
+			],
+			"@Assets/*": [
+				"Assets/*"
+			]
+		}
+	},
+	"filesGlob": [
+		"typings/index.d.ts",
+		"src/**/*.ts",
+		"src/**/*.tsx"
+	],
+	"exclude": [
+		"node_modules",
+		"tests",
+		"index.js"
+	],
+	"compileOnSave": false
+}
