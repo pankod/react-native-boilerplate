@@ -115,7 +115,9 @@ npm install
  ```
  <br/>
 
- #### Predefined commands on package.json
+ ### Predefined commands on package.json
+
+
 
 Cache clear and restart react native bundler
 
