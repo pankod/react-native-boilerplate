@@ -1,4 +1,9 @@
 
+<div align="center">
+ <img src="pankod_cover.jpg" width="600">
+</div>
+
+<br/>
 
 A well-structured React Native Boilerplate with Typescript, Redux, Jest & Enzyme support  and everything you'll ever need to deploy rock solid apps.
 
