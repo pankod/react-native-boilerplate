@@ -1,10 +1,10 @@
 // Global Imports
 import React, { Component } from 'react';
-import { SvgUri, Text, Svg } from 'react-native-svg';
+import { Text, Svg } from 'react-native-svg';
 import { connect } from 'react-redux';
 
 // Local Styles
-import { ContainerCenter } from '@Assets/Styles';
+import { ContainerCenter } from '@Styled';
 
 class HomeComponent extends Component {
     public render(): JSX.Element {
