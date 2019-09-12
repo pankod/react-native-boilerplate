@@ -54,7 +54,7 @@ export const ApodButton = styled.TouchableOpacity`
 `;
 
 export const ApodText = styled.Text`
-    font-size: 30px;
+    font-size: 20px;
     color: ${({ theme }) => theme.colors.primary};
 `;
 
