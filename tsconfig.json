@@ -18,8 +18,17 @@
         "target": "esnext",
         "baseUrl": ".",
         "paths": {
-            "@Assets/*": [
-                "src/Assets/*"
+            "@Definitions/*": [
+                "src/Definitions/*"
+            ],
+            "@Definitions": [
+                "src/Definitions"
+            ],
+            "@Styled/*": [
+                "src/Styled/*"
+            ],
+            "@Styled": [
+                "src/Styled"
             ],
             "@Interfaces/*": [
                 "src/Interfaces/*"
@@ -36,11 +45,11 @@
             "@Services/*": [
                 "src/Services/*"
             ],
-            "@Store/*": [
-                "src/Store/*"
+            "@Redux/*": [
+                "src/Redux/*"
             ],
-            "@Store": [
-                "src/Store"
+            "@Redux": [
+                "src/Redux"
             ],
             "@Scenes/*": [
                 "scenes/*"
