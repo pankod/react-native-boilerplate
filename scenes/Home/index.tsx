@@ -46,8 +46,8 @@ class HomeComponent extends Component {
                 />
                 <Middle>
                     <Centered>
-                        <TopText>Hello</TopText>
-                        <Heading text={'World'} />
+                        {/* <TopText>Hello</TopText> */}
+                        <Heading text={'Hello World'} />
                         <Buttons>
                             {this.renderLocaleButtons('tr ')}
                         </Buttons>
@@ -56,7 +56,7 @@ class HomeComponent extends Component {
                         <ApodButton
                             onPress={() => RouterActions.push('Apod')}
                         >
-                            <ApodText> Get A Photo</ApodText>
+                            <ApodText>Discover Space</ApodText>
                         </ApodButton>
                     </Apod>
 
