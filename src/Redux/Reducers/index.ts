@@ -2,7 +2,7 @@
 import { combineReducers } from 'redux';
 
 // Local Imports
-import { HomeReducer } from '@Redux/Reducers/Home';
+import { HomeReducer } from '@Redux/Reducers/home';
 
 const RootReducer = combineReducers({
     home: HomeReducer,
