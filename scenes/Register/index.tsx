@@ -4,7 +4,7 @@ import { Text } from 'react-native';
 import { connect } from 'react-redux';
 
 // Local Styles
-import { ContainerCenter } from '@Assets/Styles';
+import { ContainerCenter } from '@Styled';
 
 class RegisterComponent extends Component {
     public render(): JSX.Element {
