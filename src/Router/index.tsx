@@ -8,17 +8,18 @@ import Apod from '@Scenes/Apod';
 
 const AppStackNavigator = createStackNavigator(
     {
-        Apod: {
-            navigationOptions: ({ navigation }) => ({
-                title: 'Apod'
-            }),
-            screen: Apod
-        },
+
         Home: {
             navigationOptions: ({ navigation }) => ({
                 title: 'Home'
             }),
             screen: Home
+        },
+        Apod: {
+            navigationOptions: ({ navigation }) => ({
+                title: 'Apod'
+            }),
+            screen: Apod
         }
     }
 );
