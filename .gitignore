@@ -78,3 +78,4 @@ Pods
 #
 .jest/
 coverage/
+.history
