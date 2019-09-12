@@ -8,11 +8,12 @@ module.exports = {
                     "."
                 ],
                 "alias": {
-                    "@Assets": "./src/Assets",
-                    "@Interfaces": "./src/Assets",
+                    "@Styled": "./src/Styled",
+                    "@Definitions": "./src/Definitions",
+                    "@Interfaces": "./src/Interfaces",
                     "@Router": "./src/Router",
                     "@Services": "./src/Services",
-                    "@Store": "./src/Store",
+                    "@Redux": "./src/Redux",
                     "@Scenes": "./scenes"
                 }
             }
