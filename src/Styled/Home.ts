@@ -6,7 +6,7 @@ export const Container = styled.View`
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    min-height: 100%;
+    height: 100%;
 `;
 
 export const Middle = styled.View`
