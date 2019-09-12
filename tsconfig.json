@@ -18,6 +18,12 @@
         "target": "esnext",
         "baseUrl": ".",
         "paths": {
+            "@Components/*": [
+                "src/Components/*"
+            ],
+            "@Componenets": [
+                "src/Components"
+            ],
             "@Definitions/*": [
                 "src/Definitions/*"
             ],
