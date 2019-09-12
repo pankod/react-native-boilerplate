@@ -8,6 +8,7 @@ module.exports = {
                     "."
                 ],
                 "alias": {
+                    "@Components": "./src/Components",
                     "@Styled": "./src/Styled",
                     "@Definitions": "./src/Definitions",
                     "@Interfaces": "./src/Interfaces",
