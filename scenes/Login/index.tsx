@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 // Local Styles
-import { ContainerCenter, PrimaryButton, SecondaryButton, ButtonText } from '@Assets/Styles';
+import { ContainerCenter, PrimaryButton, SecondaryButton, ButtonText } from '@Styled';
 import RouterActions from '@Services/RouterActions';
 
 class LoginComponent extends Component<{}, {}> {
@@ -13,7 +13,7 @@ class LoginComponent extends Component<{}, {}> {
                 <PrimaryButton onPress={() => RouterActions.push('Register')} style={{ marginBottom: 10 }}>
                     <ButtonText>Register</ButtonText>
                 </PrimaryButton>
-                <SecondaryButton onPress={() => RouterActions.replace('Home')}>
+                <SecondaryButton onPress={() => RouterActions.push('Home')}>
                     <ButtonText>Home</ButtonText>
                 </SecondaryButton>
 
