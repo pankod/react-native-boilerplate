@@ -1,28 +1,67 @@
 // Global Imports
 import React, { Component } from 'react';
-import { Text, Svg } from 'react-native-svg';
 import { connect } from 'react-redux';
+import { Image, Dimensions, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import RouterActions from '@Services/RouterActions';
+
 
 // Local Styles
-import { ContainerCenter } from '@Styled';
+import {
+    Container,
+    Apod,
+    ApodButton,
+    TopText,
+    ApodText,
+    Middle,
+    Centered,
+    Buttons,
+} from "@Styled/Home";
+const styles = StyleSheet.create({
+    stretch: {
+        width: Dimensions.get('window').width - 50,
+        resizeMode: 'contain',
+    }
+});
+
+import { Heading } from "@Components";
 
 class HomeComponent extends Component {
+    renderLocaleButtons = (activeLanguage: string) =>
+        ["en", "es", "tr"].map(lang => (
+            <TouchableOpacity
+                key={lang}
+                onPress={() => console.log(lang)}
+            >
+                <Text>
+                    {lang}
+                </Text>
+            </TouchableOpacity>
+        ));
     public render(): JSX.Element {
         return (
-            <ContainerCenter>
-                <Svg height="100" width="200">
-                    <Text
-                        fill="none"
-                        stroke="blue"
-                        fontSize="30"
-                        fontWeight="bold"
-                        x="100"
-                        y="30"
-                        textAnchor="middle"
-                    >   SVG Available!
-                    </Text>
-                </Svg>
-            </ContainerCenter>
+            <Container>
+                <Image
+                    style={styles.stretch}
+                    source={require('/static/images/pankod-logo.png')}
+                />
+                <Middle>
+                    <Centered>
+                        <TopText>Hello</TopText>
+                        <Heading text={'World'} />
+                        <Buttons>
+                            {this.renderLocaleButtons('tr ')}
+                        </Buttons>
+                    </Centered>
+                    <Apod>
+                        <ApodButton
+                            onPress={() => RouterActions.push('Apod')}
+                        >
+                            <ApodText> Get A Photo</ApodText>
+                        </ApodButton>
+                    </Apod>
+
+                </Middle>
+            </Container>
         );
     }
 }
