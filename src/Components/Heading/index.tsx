@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     },
     back: {
         color: 'grey',
-        fontSize: 80,
+        fontSize: 60,
         fontWeight: 'bold',
         lineHeight: 86,
         zIndex: -1
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
 
     front: {
         color: 'white',
-        fontSize: 40,
+        fontSize: 35,
         fontWeight: 'bold',
         position: 'absolute',
     }
