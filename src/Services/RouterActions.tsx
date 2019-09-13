@@ -1,12 +1,19 @@
 // Global Imports
-import { DrawerActions, NavigationActions, StackActions } from 'react-navigation';
+import {
+    DrawerActions,
+    NavigationActions,
+    StackActions,
+} from "react-navigation";
 
 // Local Imports
-let navigatorRef: object;
+interface INavigator {
+    dispatch: Function;
+}
+let navigatorRef: INavigator;
 let stack: Array<object> = [];
 
 export const RouterActions = {
-    setNavigationReference: (navigation: object): void => {
+    setNavigationReference: (navigation: INavigator): void => {
         navigatorRef = navigation;
     },
     push: (screen: string, props: object = {}): void => {
@@ -23,15 +30,20 @@ export const RouterActions = {
         );
     },
     replace: (screen: string, props: object = {}): void => {
-        stack = [{
-            routeName: screen,
-            params: props,
-        }];
+        stack = [
+            {
+                routeName: screen,
+                params: props,
+            },
+        ];
 
         const resetAction = StackActions.reset({
             index: 0,
             actions: [
-                NavigationActions.navigate({ routeName: screen, params: props }),
+                NavigationActions.navigate({
+                    routeName: screen,
+                    params: props,
+                }),
             ],
         });
         navigatorRef.dispatch(resetAction);
@@ -44,9 +56,7 @@ export const RouterActions = {
     },
     currentState: (): object => stack[stack.length - 1],
     drawerToggle: (): void => {
-        navigatorRef.dispatch(
-            DrawerActions.toggleDrawer()
-        );
+        navigatorRef.dispatch(DrawerActions.toggleDrawer());
     },
 };
 
