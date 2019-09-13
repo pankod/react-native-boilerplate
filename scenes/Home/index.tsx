@@ -1,71 +1,79 @@
 // Global Imports
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { Image, Dimensions, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import RouterActions from '@Services/RouterActions';
+import * as React from "react";
+import { IHomePage } from "@Interfaces";
+import { IStore } from "@Redux/IStore";
+import { HomeActions } from "@Actions";
 
+import { useSelector, useDispatch } from "react-redux";
+
+import {
+    Image,
+    Dimensions,
+    Text,
+    TouchableOpacity,
+    StyleSheet,
+} from "react-native";
+import RouterActions from "@Services/RouterActions";
 
 // Local Styles
 import {
     Container,
     Apod,
     ApodButton,
-    TopText,
     ApodText,
     Middle,
     Centered,
     Buttons,
-} from "@Styled/Home";
+} from "./styled";
 const styles = StyleSheet.create({
     stretch: {
-        width: Dimensions.get('window').width - 50,
-        resizeMode: 'contain',
-    }
+        width: Dimensions.get("window").width - 50,
+        resizeMode: "contain",
+    },
 });
 
 import { Heading } from "@Components";
 
-class HomeComponent extends Component {
-    renderLocaleButtons = (activeLanguage: string) =>
+const Home: React.FunctionComponent<IHomePage.IProps> = () => {
+    const home = useSelector((state: IStore) => state.home);
+    const dispatch = useDispatch();
+
+    const renderLocaleButtons = (activeLanguage: string) =>
         ["en", "es", "tr"].map(lang => (
-            <TouchableOpacity
-                key={lang}
-                onPress={() => console.log(lang)}
-            >
-                <Text>
-                    {lang}
-                </Text>
+            <TouchableOpacity key={lang} onPress={() => console.log(lang)}>
+                <Text>{lang}</Text>
             </TouchableOpacity>
         ));
-    public render(): JSX.Element {
-        return (
-            <Container>
-                <Image
-                    style={styles.stretch}
-                    source={require('/static/images/pankod-logo.png')}
-                />
-                <Middle>
-                    <Centered>
-                        {/* <TopText>Hello</TopText> */}
-                        <Heading text={'Hello World'} />
-                        <Buttons>
-                            {this.renderLocaleButtons('tr ')}
-                        </Buttons>
-                    </Centered>
-                    <Apod>
-                        <ApodButton
-                            onPress={() => RouterActions.push('Apod')}
-                        >
-                            <ApodText>Discover Space</ApodText>
-                        </ApodButton>
-                    </Apod>
 
-                </Middle>
-            </Container>
+    const handleApod = () => {
+        dispatch(
+            HomeActions.GetApod({
+                params: { hd: false },
+            })
         );
-    }
-}
+        RouterActions.push("Apod");
+    };
 
-const Home = connect()(HomeComponent);
+    return (
+        <Container>
+            <Image
+                style={styles.stretch}
+                source={require("/static/images/pankod-logo.png")}
+            />
+            <Middle>
+                <Centered>
+                    {/* <TopText>Hello</TopText> */}
+                    <Heading text={"Hello World"} />
+                    <Buttons>{renderLocaleButtons("tr ")}</Buttons>
+                </Centered>
+                <Apod>
+                    <ApodButton onPress={() => handleApod()}>
+                        <ApodText>Discover Space</ApodText>
+                    </ApodButton>
+                </Apod>
+            </Middle>
+        </Container>
+    );
+};
 
 export default Home;
