@@ -5,9 +5,7 @@
         "esModuleInterop": true,
         "isolatedModules": true,
         "jsx": "react",
-        "lib": [
-            "es6"
-        ],
+        "lib": ["es6"],
         "moduleResolution": "node",
         "noEmit": true,
         "strict": true,
@@ -18,55 +16,25 @@
         "target": "esnext",
         "baseUrl": ".",
         "paths": {
-            "@Components/*": [
-                "src/Components/*"
-            ],
-            "@Componenets": [
-                "src/Components"
-            ],
-            "@Definitions/*": [
-                "src/Definitions/*"
-            ],
-            "@Definitions": [
-                "src/Definitions"
-            ],
-            "@Styled/*": [
-                "src/Styled/*"
-            ],
-            "@Styled": [
-                "src/Styled"
-            ],
-            "@Interfaces/*": [
-                "src/Interfaces/*"
-            ],
-            "@Interfaces": [
-                "src/Interfaces"
-            ],
-            "@Router/*": [
-                "src/Router/*"
-            ],
-            "@Router": [
-                "src/Router"
-            ],
-            "@Services/*": [
-                "src/Services/*"
-            ],
-            "@Redux/*": [
-                "src/Redux/*"
-            ],
-            "@Redux": [
-                "src/Redux"
-            ],
-            "@Scenes/*": [
-                "scenes/*"
-            ]
+            "@Actions": ["src/Actions"],
+            "@Components/*": ["src/Components/*"],
+            "@Componenets": ["src/Components"],
+            "@Definitions/*": ["src/Definitions/*"],
+            "@Definitions": ["src/Definitions"],
+            "@Styled/*": ["src/Styled/*"],
+            "@Styled": ["src/Styled"],
+            "@Interfaces/*": ["src/Interfaces/*"],
+            "@Interfaces": ["src/Interfaces"],
+            "@Router/*": ["src/Router/*"],
+            "@Router": ["src/Router"],
+            "@Services/*": ["src/Services/*"],
+            "@Services": ["src/Services"],
+            "@Redux/*": ["src/Redux/*"],
+            "@Redux": ["src/Redux"],
+            "@Scenes/*": ["scenes/*"]
         }
     },
-    "filesGlob": [
-        "typings/index.d.ts",
-        "src/**/*.ts",
-        "src/**/*.tsx"
-    ],
+    "filesGlob": ["typings/index.d.ts", "src/**/*.ts", "src/**/*.tsx"],
     "exclude": [
         "node_modules",
         "babel.config.js",
