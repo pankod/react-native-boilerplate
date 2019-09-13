@@ -32,7 +32,7 @@ const configureStore = (preloadedState: object) => {
     const store = createStore(persistedReducer, preloadedState, composeEnhancers(...composed));
     const persistedStore = persistStore(store);
 
-    return persistedStore;
+    return store;
 };
 
 export default configureStore;
