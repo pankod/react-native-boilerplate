@@ -12,27 +12,27 @@ export const RouterActions = {
     push: (screen: string, props: object = {}): void => {
         stack.push({
             routeName: screen,
-            params: props
+            params: props,
         });
 
         navigatorRef.dispatch(
             NavigationActions.navigate({
                 params: props,
-                routeName: screen
+                routeName: screen,
             })
         );
     },
     replace: (screen: string, props: object = {}): void => {
         stack = [{
             routeName: screen,
-            params: props
+            params: props,
         }];
 
         const resetAction = StackActions.reset({
             index: 0,
             actions: [
-                NavigationActions.navigate({ routeName: screen, params: props })
-            ]
+                NavigationActions.navigate({ routeName: screen, params: props }),
+            ],
         });
         navigatorRef.dispatch(resetAction);
     },
@@ -47,7 +47,7 @@ export const RouterActions = {
         navigatorRef.dispatch(
             DrawerActions.toggleDrawer()
         );
-    }
-}
+    },
+};
 
 export default RouterActions;
