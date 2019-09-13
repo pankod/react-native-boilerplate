@@ -1,52 +1,52 @@
 {
-  "name": "ReactNativeBoilerplate",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "start": "react-native start",
-    "test": "jest",
-    "lint": "eslint .",
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "format": "eslint {scenes,src} --fix",
-    "clear": "watchman watch-del-all && rm -rf /tmp/metro-bundler-cache-* && rm -rf /tmp/haste-map-react-native-packager-* && react-native start --reset-cache"
-  },
-  "dependencies": {
-    "@types/redux-logger": "^3.0.7",
-    "react": "16.8.6",
-    "react-native": "0.60.5",
-    "react-native-code-push": "^5.7.0",
-    "react-native-gesture-handler": "^1.4.1",
-    "react-native-reanimated": "^1.2.0",
-    "react-native-screens": "^2.0.0-alpha.3",
-    "react-native-svg": "^9.9.3",
-    "react-navigation": "^4.0.2",
-    "react-navigation-stack": "^1.5.4",
-    "react-redux": "^7.1.1",
-    "redux-logger": "^3.0.6",
-    "redux-persist": "^6.0.0",
-    "redux-thunk": "^2.3.0",
-    "styled-components": "^4.3.2"
-  },
-  "devDependencies": {
-    "@babel/core": "7.6.0",
-    "@babel/runtime": "7.6.0",
-    "@react-native-community/eslint-config": "0.0.3",
-    "@types/jest": "24.0.18",
-    "@types/react": "16.9.2",
-    "@types/react-native": "0.60.13",
-    "@types/react-redux": "^7.1.2",
-    "@types/react-test-renderer": "16.9.0",
-    "@types/styled-components": "^4.1.19",
-    "babel-jest": "24.9.0",
-    "babel-plugin-module-resolver": "^3.2.0",
-    "eslint": "6.3.0",
-    "jest": "24.9.0",
-    "metro-react-native-babel-preset": "^0.54.1",
-    "react-test-renderer": "16.8.6",
-    "typescript": "3.6.2"
-  },
-  "jest": {
-    "preset": "react-native"
-  }
+    "name": "ReactNativeBoilerplate",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "react-native start",
+        "test": "jest",
+        "lint": "eslint .",
+        "android": "react-native run-android",
+        "ios": "react-native run-ios",
+        "format": "eslint ./{scenes,src}/**/*.* --fix",
+        "clear": "watchman watch-del-all && rm -rf /tmp/metro-bundler-cache-* && rm -rf /tmp/haste-map-react-native-packager-* && react-native start --reset-cache"
+    },
+    "dependencies": {
+        "react": "16.8.6",
+        "react-native": "0.60.5",
+        "react-native-code-push": "^5.7.0",
+        "react-native-gesture-handler": "^1.4.1",
+        "react-native-reanimated": "^1.2.0",
+        "react-native-screens": "^2.0.0-alpha.3",
+        "react-native-svg": "^9.9.3",
+        "react-navigation": "^4.0.2",
+        "react-navigation-stack": "^1.5.4",
+        "react-redux": "^7.1.1",
+        "redux-logger": "^3.0.6",
+        "redux-persist": "^6.0.0",
+        "redux-thunk": "^2.3.0",
+        "styled-components": "^4.3.2"
+    },
+    "devDependencies": {
+        "@types/redux-logger": "^3.0.7",
+        "@babel/core": "7.6.0",
+        "@babel/runtime": "7.6.0",
+        "@react-native-community/eslint-config": "0.0.3",
+        "@types/jest": "24.0.18",
+        "@types/react": "16.9.2",
+        "@types/react-native": "0.60.13",
+        "@types/react-redux": "^7.1.2",
+        "@types/react-test-renderer": "16.9.0",
+        "@types/styled-components": "^4.1.19",
+        "babel-jest": "24.9.0",
+        "babel-plugin-module-resolver": "^3.2.0",
+        "eslint": "^5.0.0",
+        "jest": "24.9.0",
+        "metro-react-native-babel-preset": "^0.54.1",
+        "react-test-renderer": "16.8.6",
+        "typescript": "3.6.2"
+    },
+    "jest": {
+        "preset": "react-native"
+    }
 }
