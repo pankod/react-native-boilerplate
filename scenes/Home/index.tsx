@@ -25,14 +25,14 @@ import {
     Centered,
     Buttons,
 } from "./styled";
+import { Heading } from "@Components";
+
 const styles = StyleSheet.create({
     stretch: {
         width: Dimensions.get("window").width - 50,
         resizeMode: "contain",
     },
 });
-
-import { Heading } from "@Components";
 
 const Home: React.FunctionComponent<IHomePage.IProps> = () => {
     const home = useSelector((state: IStore) => state.home);
@@ -68,7 +68,7 @@ const Home: React.FunctionComponent<IHomePage.IProps> = () => {
                 </Centered>
                 <Apod>
                     <ApodButton onPress={() => handleApod()}>
-                        <ApodText>Discover Space</ApodText>
+                        <ApodText>Discover Space </ApodText>
                     </ApodButton>
                 </Apod>
             </Middle>
