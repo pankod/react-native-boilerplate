@@ -46,12 +46,14 @@ const Home: React.FunctionComponent<IHomePage.IProps> = () => {
         ));
 
     const handleApod = () => {
+        console.log("butona tıklandı");
+
+        RouterActions.push("Apod");
         dispatch(
             HomeActions.GetApod({
                 params: { hd: false },
             })
         );
-        RouterActions.push("Apod");
     };
 
     return (
@@ -62,7 +64,6 @@ const Home: React.FunctionComponent<IHomePage.IProps> = () => {
             />
             <Middle>
                 <Centered>
-                    {/* <TopText>Hello</TopText> */}
                     <Heading text={"Hello World"} />
                     <Buttons>{renderLocaleButtons("tr ")}</Buttons>
                 </Centered>
