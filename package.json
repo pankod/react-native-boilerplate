@@ -8,7 +8,7 @@
         "lint": "eslint .",
         "android": "react-native run-android",
         "ios": "react-native run-ios",
-        "format": "eslint ./{scenes,src}/**/*.* --fix",
+        "format": "eslint ./{scenes,src}/**/*.{ts,tsx} --fix",
         "clear": "watchman watch-del-all && rm -rf /tmp/metro-bundler-cache-* && rm -rf /tmp/haste-map-react-native-packager-* && react-native start --reset-cache"
     },
     "dependencies": {

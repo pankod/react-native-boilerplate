@@ -1,8 +1,6 @@
 // Global Imports
 import * as React from "react";
-import { IHomePage } from "@Interfaces";
 import { IStore } from "@Redux/IStore";
-import { HomeActions } from "@Actions";
 
 import { useSelector, useDispatch } from "react-redux";
 
@@ -14,6 +12,8 @@ import {
     StyleSheet,
 } from "react-native";
 import RouterActions from "@Services/RouterActions";
+import { HomeActions } from "@Actions";
+import { IHomePage } from "@Interfaces";
 
 // Local Styles
 import {
@@ -63,7 +63,7 @@ const Home: React.FunctionComponent<IHomePage.IProps> = () => {
             <Middle>
                 <Centered>
                     {/* <TopText>Hello</TopText> */}
-                    <Heading text={"Hello World"} />
+                    <Heading text="Hello World" />
                     <Buttons>{renderLocaleButtons("tr ")}</Buttons>
                 </Centered>
                 <Apod>
