@@ -1,13 +1,12 @@
 module.exports = {
-    presets: ['module:metro-react-native-babel-preset'],
+    presets: ["module:metro-react-native-babel-preset"],
     plugins: [
         [
             "module-resolver",
             {
-                "root": [
-                    "."
-                ],
-                "alias": {
+                root: ["."],
+                alias: {
+                    "@Actions": "./src/Actions",
                     "@Components": "./src/Components",
                     "@Styled": "./src/Styled",
                     "@Definitions": "./src/Definitions",
@@ -15,9 +14,9 @@ module.exports = {
                     "@Router": "./src/Router",
                     "@Services": "./src/Services",
                     "@Redux": "./src/Redux",
-                    "@Scenes": "./scenes"
-                }
-            }
+                    "@Scenes": "./scenes",
+                },
+            },
         ],
-    ]
+    ],
 };
