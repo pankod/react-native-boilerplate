@@ -8,6 +8,7 @@ module.exports = {
         "prettier/react",
     ],
     rules: {
-        "import/no-unresolved": "off"
-    }
+        "import/no-unresolved": "off",
+        "import/prefer-default-export": "off",
+    },
 };

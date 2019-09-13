@@ -11,4 +11,4 @@ I18nClient.translations = {
 	tr: TR,
 };
 
-export let I18n = I18nClient;
+export const I18n = I18nClient;

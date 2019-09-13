@@ -8,7 +8,7 @@
         "lint": "eslint .",
         "android": "react-native run-android",
         "ios": "react-native run-ios",
-        "format": "eslint ./{scenes,src}/**/*.* --fix",
+        "format": "eslint ./{scenes,src}/**/*.{ts,tsx} --fix",
         "clear": "watchman watch-del-all && rm -rf /tmp/metro-bundler-cache-* && rm -rf /tmp/haste-map-react-native-packager-* && react-native start --reset-cache"
     },
     "dependencies": {
@@ -24,6 +24,7 @@
         "react-navigation": "^4.0.2",
         "react-navigation-stack": "^1.5.4",
         "react-redux": "^7.1.1",
+        "redux": "^4.0.4",
         "redux-logger": "^3.0.6",
         "redux-persist": "^6.0.0",
         "redux-thunk": "^2.3.0",
