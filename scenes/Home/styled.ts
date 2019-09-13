@@ -1,5 +1,4 @@
-
-import styled from 'styled-components/native';
+import styled from "styled-components/native";
 
 export const Container = styled.View`
     background-color: ${({ theme }) => theme.colors.primary};
@@ -11,13 +10,13 @@ export const Container = styled.View`
 `;
 
 export const Middle = styled.View`
-   flex:1;
+    flex: 1;
     justify-content: space-around;
 `;
 
 export const Centered = styled.View`
-    justify-content:center;
-	align-items:center;
+    justify-content: center;
+    align-items: center;
 `;
 
 export const Buttons = styled.View`
@@ -31,7 +30,7 @@ export const Buttons = styled.View`
     margin-left: 15px;
     padding: 10px 3px;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-around;
     color: #4b6c8d;
     .button {
