@@ -1,3 +1,3 @@
 export const TR = {
-	Sample_Text: 'Merhaba!'
+	Sample_Text: 'Merhaba!',
 };

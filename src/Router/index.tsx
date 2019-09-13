@@ -11,16 +11,16 @@ const AppStackNavigator = createStackNavigator(
 
         Home: {
             navigationOptions: ({ navigation }) => ({
-                title: 'Home'
+                title: 'Home',
             }),
-            screen: Home
+            screen: Home,
         },
         Apod: {
             navigationOptions: ({ navigation }) => ({
-                title: 'Apod'
+                title: 'Apod',
             }),
-            screen: Apod
-        }
+            screen: Apod,
+        },
     }
 );
 

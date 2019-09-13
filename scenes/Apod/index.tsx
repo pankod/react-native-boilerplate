@@ -4,7 +4,7 @@ import { Text, Svg } from 'react-native-svg';
 import { connect } from 'react-redux';
 
 // Local Styles
-import { Container } from '@Styled/Home';
+import { Container } from './styled';
 import { ContainerCenter } from '@Styled';
 
 

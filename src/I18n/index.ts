@@ -8,7 +8,7 @@ I18nClient.locale = 'tr';
 
 I18nClient.translations = {
 	en: EN,
-	tr: TR
+	tr: TR,
 };
 
 export let I18n = I18nClient;

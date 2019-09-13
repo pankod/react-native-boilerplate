@@ -4,4 +4,4 @@ declare namespace IHeading {
     }
 }
 
-export { IHeading };
+export {IHeading};

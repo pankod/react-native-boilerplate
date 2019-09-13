@@ -1,3 +1,3 @@
 export const EN = {
-	Sample_Text: 'Welcome!'
+	Sample_Text: 'Welcome!',
 };
