@@ -14,7 +14,9 @@
     "dependencies": {
         "enzyme": "^3.10.0",
         "enzyme-adapter-react-16": "^1.14.0",
+        "i18next": "^17.0.14",
         "react": "16.8.6",
+        "react-i18next": "^10.12.4",
         "react-native": "0.60.5",
         "react-native-code-push": "^5.7.0",
         "react-native-gesture-handler": "^1.4.1",
