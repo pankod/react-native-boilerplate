@@ -1,37 +1,27 @@
 // Global Imports
-import React, { Component } from 'react';
-import { Text, Svg } from 'react-native-svg';
-import { connect } from 'react-redux';
+import * as React from "react";
+import { useSelector } from "react-redux";
+import { IStore } from "@Redux/IStore";
 
 // Local Styles
-import { Container } from './styled';
-import { ContainerCenter } from '@Styled';
+import { Container, ApodImage } from "./styled";
+import { ContainerCenter } from "@Styled";
+import { IHomePage } from "@Interfaces";
 
-
-class ApodComponent extends Component {
-    public render(): JSX.Element {
-        return (
-            <Container>
-                <ContainerCenter>
-                    <Svg height="100" width="200">
-                        <Text
-                            fill="white"
-                            stroke="white"
-                            fontSize="30"
-                            fontWeight="bold"
-                            x="100"
-                            y="30"
-                            textAnchor="middle"
-                        >   Apod Available!
-                    </Text>
-                    </Svg>
-                </ContainerCenter>
-
-            </Container>
-        );
-    }
-}
-
-const Apod = connect()(ApodComponent);
+const Apod: React.FunctionComponent<IHomePage.IProps> = () => {
+    const home = useSelector((state: IStore) => state.home);
+    return (
+        <Container>
+            <ContainerCenter>
+                <ApodImage
+                    source={{
+                        uri: home.image.url,
+                    }}
+                    resizeMode={"contain"}
+                />
+            </ContainerCenter>
+        </Container>
+    );
+};
 
 export default Apod;
