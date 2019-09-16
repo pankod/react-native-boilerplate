@@ -25,12 +25,14 @@
             "@Styled": ["src/Styled"],
             "@Interfaces/*": ["src/Interfaces/*"],
             "@Interfaces": ["src/Interfaces"],
+            "@I18n": ["src/I18n"],
+            "@I18n/*": ["src/I18n/*"],
             "@Router/*": ["src/Router/*"],
             "@Router": ["src/Router"],
-            "@Services/*": ["src/Services/*"],
-            "@Services": ["src/Services"],
             "@Redux/*": ["src/Redux/*"],
             "@Redux": ["src/Redux"],
+            "@Services/*": ["src/Services/*"],
+            "@Services": ["src/Services"],
             "@Scenes/*": ["scenes/*"]
         }
     },
