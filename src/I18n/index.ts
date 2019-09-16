@@ -5,8 +5,6 @@ import i18next from "i18next";
 
 import { en, tr, es } from "@I18n/Languages";
 
-console.log("re", tr);
-
 const languageDetector = {
     type: "languageDetector",
     async: true,

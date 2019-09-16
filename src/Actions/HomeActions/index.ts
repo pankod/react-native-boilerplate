@@ -27,6 +27,7 @@ export const HomeActions = {
         const result = await PlanetaryService.GetPlanetImage({
             params: payload.params,
         });
+        console.log("GetApod", result);
 
         dispatch({
             payload: {
