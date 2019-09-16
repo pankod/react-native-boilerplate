@@ -8,8 +8,7 @@ import { HttpModel } from "@Interfaces";
 // #endregion Interface Imports
 import { API_KEY, API_URL } from "react-native-dotenv";
 
-const BaseUrl = `${API_URL}/api`;
-
+const BaseUrl = `${API_URL}`;
 export const Http = {
     Request: async <A>(
         methodType: string,
@@ -17,8 +16,6 @@ export const Http = {
         params?: HttpModel.IRequestQueryPayload,
         payload?: HttpModel.IRequestPayload
     ): Promise<A> => {
-        console.log("http");
-
         return new Promise((resolve, reject) => {
             const query = params
                 ? `?${stringify({ ...params, api_key: API_KEY })}`
@@ -34,12 +31,9 @@ export const Http = {
             })
                 .then(async response => {
                     if (response.status === 200) {
-                        console.log("response", response);
-
-                        return response.json().then(resolve);
-                    } else {
-                        return reject(response);
+                        return resolve(response.json());
                     }
+                    return reject(response);
                 })
                 .catch(e => {
                     reject(e);
