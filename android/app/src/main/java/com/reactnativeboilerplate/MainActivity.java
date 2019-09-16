@@ -1,6 +1,10 @@
+
 package com.reactnativeboilerplate;
 
+import android.os.Bundle;
 import com.facebook.react.ReactActivity;
+
+import com.zoontek.rnbootsplash.RNBootSplash;
 
 public class MainActivity extends ReactActivity {
 
@@ -12,4 +16,10 @@ public class MainActivity extends ReactActivity {
     protected String getMainComponentName() {
         return "ReactNativeBoilerplate";
     }
+
+    @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    RNBootSplash.show(R.drawable.bootsplash, MainActivity.this); // <- display the "bootsplash" xml view over our MainActivity
+  }
 }
