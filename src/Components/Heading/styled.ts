@@ -18,7 +18,8 @@ export const FrontText = styled.Text`
 
 export const BackText = styled.Text`
     color: grey;
-    font-size: 60;
+    font-size: 80;
+    letter-spacing: 1px;
     font-weight: bold;
     line-height: 86;
     z-index: -1;
