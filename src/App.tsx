@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import { Provider } from "react-redux";
 import { ThemeProvider } from "styled-components";
 
-// import SplashScreen from 'react-native-splash-screen';
 // import codePush from "react-native-code-push";
 
 // Local Imports
@@ -13,6 +12,7 @@ import RouterActions from "@Services/RouterActions";
 
 import { theme } from "@Definitions/Styled";
 import { I18n } from "@I18n";
+import BootSplash from "react-native-bootsplash";
 
 // Local Styles
 import { SafeArea } from "@Styled";
@@ -22,8 +22,8 @@ const store = configureStore({});
 
 export class App extends Component<{}> {
     public componentDidMount(): void {
-        // SplashScreen.hide();
         I18n.init();
+        BootSplash.hide();
     }
 
     public render(): JSX.Element {

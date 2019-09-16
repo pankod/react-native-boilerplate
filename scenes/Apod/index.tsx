@@ -11,8 +11,6 @@ import { IHomePage } from "@Interfaces";
 
 const Apod: React.FunctionComponent<IHomePage.IProps> = () => {
     const home = useSelector((state: IStore) => state.home);
-    console.log("home.image.url", home.image.url);
-
     return (
         <Container>
             <ContainerCenter>
