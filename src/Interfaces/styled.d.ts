@@ -5,5 +5,9 @@ declare module "styled-components" {
         colors: {
             primary: string;
         };
+        dimensions: {
+            screenWidth: number;
+            screenHeight: number;
+        };
     }
 }
