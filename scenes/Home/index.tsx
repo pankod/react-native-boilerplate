@@ -24,8 +24,11 @@ import {
     Middle,
     Centered,
     Buttons,
+    LocaleButtonText,
 } from "./styled";
+
 import { Heading } from "@Components";
+import { useTranslation } from "react-i18next";
 
 const styles = StyleSheet.create({
     stretch: {
@@ -35,19 +38,22 @@ const styles = StyleSheet.create({
 });
 
 const Home: React.FunctionComponent<IHomePage.IProps> = () => {
+    const { t, i18n } = useTranslation();
     const home = useSelector((state: IStore) => state.home);
     const dispatch = useDispatch();
 
     const renderLocaleButtons = (activeLanguage: string) =>
         ["en", "es", "tr"].map(lang => (
-            <TouchableOpacity key={lang} onPress={() => console.log(lang)}>
-                <Text>{lang}</Text>
+            <TouchableOpacity
+                key={lang}
+                onPress={() => i18n.changeLanguage(lang)}>
+                <LocaleButtonText isActive={activeLanguage === lang}>
+                    {lang}
+                </LocaleButtonText>
             </TouchableOpacity>
         ));
 
     const handleApod = () => {
-        console.log("butona tıklandı");
-
         RouterActions.push("Apod");
         dispatch(
             HomeActions.GetApod({
@@ -64,8 +70,8 @@ const Home: React.FunctionComponent<IHomePage.IProps> = () => {
             />
             <Middle>
                 <Centered>
-                    <Heading text="Hello World" />
-                    <Buttons>{renderLocaleButtons("tr")}</Buttons>
+                    <Heading text={t("Hello")} />
+                    <Buttons>{renderLocaleButtons(i18n.language)}</Buttons>
                 </Centered>
                 <Apod>
                     <ApodButton onPress={() => handleApod()}>

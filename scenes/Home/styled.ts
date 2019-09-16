@@ -41,6 +41,10 @@ export const Buttons = styled.View`
     }
 `;
 
+export const LocaleButtonText = styled.Text<{ isActive: boolean }>`
+    color: ${({ isActive }) => (isActive ? "#2c3e50" : "#4b6c8d")};
+`;
+
 export const Apod = styled.View`
     display: flex;
     align-items: center;
