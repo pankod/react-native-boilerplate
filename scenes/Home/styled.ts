@@ -22,26 +22,20 @@ export const Centered = styled.View`
 export const Buttons = styled.View`
     background: #f9da2e;
     border-radius: 8px;
-    font-weight: 700;
-    font-size: 25px;
     letter-spacing: 0;
     width: 100px;
-    height: 36px;
+    height: 46px;
     margin-left: 15px;
-    padding: 10px 3px;
+    padding: 10px 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     color: #4b6c8d;
-    .button {
-        cursor: pointer;
-    }
-    .active {
-        color: #2c3e50;
-    }
 `;
 
 export const LocaleButtonText = styled.Text<{ isActive: boolean }>`
+    font-size: 20px;
+    font-weight: 500;
     color: ${({ isActive }) => (isActive ? "#2c3e50" : "#4b6c8d")};
 `;
 
@@ -58,7 +52,8 @@ export const ApodButton = styled.TouchableOpacity`
 `;
 
 export const ApodText = styled.Text`
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: 500;
     color: ${({ theme }) => theme.colors.primary};
 `;
 

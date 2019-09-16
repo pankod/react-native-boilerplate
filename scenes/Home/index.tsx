@@ -1,8 +1,6 @@
 // Global Imports
 import * as React from "react";
-import { IStore } from "@Redux/IStore";
-
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 
 import {
     Image,
@@ -39,7 +37,7 @@ const styles = StyleSheet.create({
 
 const Home: React.FunctionComponent<IHomePage.IProps> = () => {
     const { t, i18n } = useTranslation();
-    const home = useSelector((state: IStore) => state.home);
+
     const dispatch = useDispatch();
 
     const renderLocaleButtons = (activeLanguage: string) =>
@@ -54,12 +52,12 @@ const Home: React.FunctionComponent<IHomePage.IProps> = () => {
         ));
 
     const handleApod = () => {
-        RouterActions.push("Apod");
         dispatch(
             HomeActions.GetApod({
                 params: { hd: false },
             })
         );
+        RouterActions.push("Apod");
     };
 
     return (
@@ -75,7 +73,7 @@ const Home: React.FunctionComponent<IHomePage.IProps> = () => {
                 </Centered>
                 <Apod>
                     <ApodButton onPress={() => handleApod()}>
-                        <ApodText>Discover Space </ApodText>
+                        <ApodText>Discover Space</ApodText>
                     </ApodButton>
                 </Apod>
             </Middle>
