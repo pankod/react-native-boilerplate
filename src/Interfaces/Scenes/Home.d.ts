@@ -1,7 +1,8 @@
 import { WithTranslation } from "react-i18next";
+import { PlanetaryModel } from "@Services/API/Planetary/Planetary";
 
 declare namespace IHomePage {
-    export interface IProps extends WithTranslation { }
+    export interface IProps extends WithTranslation {}
 
     export interface InitialProps {
         namespacesRequired: string[];
@@ -17,15 +18,15 @@ declare namespace IHomePage {
     }
 
     namespace Actions {
-        export interface IMapPayload { }
+        export interface IMapPayload {}
 
-        export interface IMapResponse { }
+        export interface IMapResponse {}
 
         export interface IGetApodPayload extends PlanetaryModel.GetApodPayload {
             params: {};
         }
 
         export interface IGetApodResponse
-            extends PlanetaryModel.GetApodResponse { }
+            extends PlanetaryModel.GetApodResponse {}
     }
 }
