@@ -1,12 +1,12 @@
 // #region Global Imports
-// import "isomorphic-unfetch";
 import { stringify } from "query-string";
+import { API_KEY, API_URL } from "react-native-dotenv";
+import "isomorphic-fetch";
 // #endregion Global Imports
 
 // #region Interface Imports
 import { HttpModel } from "@Interfaces";
 // #endregion Interface Imports
-import { API_KEY, API_URL } from "react-native-dotenv";
 
 const BaseUrl = `${API_URL}`;
 export const Http = {
@@ -20,6 +20,7 @@ export const Http = {
             const query = params
                 ? `?${stringify({ ...params, api_key: API_KEY })}`
                 : "";
+            console.log(`${BaseUrl}${url}${query}`);
 
             fetch(`${BaseUrl}${url}${query}`, {
                 body: JSON.stringify(payload),
