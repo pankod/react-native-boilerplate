@@ -20,7 +20,6 @@ export const Http = {
             const query = params
                 ? `?${stringify({ ...params, api_key: API_KEY })}`
                 : "";
-            console.log(`${BaseUrl}${url}${query}`);
 
             fetch(`${BaseUrl}${url}${query}`, {
                 body: JSON.stringify(payload),

@@ -1,13 +1,18 @@
-// Global Imports
+// #region Global Imports
 import * as React from "react";
 import { ActivityIndicator } from "react-native";
 import { useSelector } from "react-redux";
 import { IStore } from "@Redux/IStore";
+// #endregion Global Imports
 
-// Local Styles
+// #region Local Imports
 import { Container, ApodImage } from "./styled";
 import { ContainerCenter } from "@Styled";
+// #endregion Local Imports
+
+// #region Interface Imports
 import { IHomePage } from "@Interfaces";
+// #endregion Interface Imports
 
 const Apod: React.FunctionComponent<IHomePage.IProps> = () => {
     const home = useSelector((state: IStore) => state.home);

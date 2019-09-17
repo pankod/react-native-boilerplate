@@ -1,19 +1,14 @@
-// Global Imports
+// #region Global Imports
 import * as React from "react";
 import { useDispatch } from "react-redux";
+import { Image, Dimensions, TouchableOpacity, StyleSheet } from "react-native";
+import { useTranslation } from "react-i18next";
+// #endregion Global Imports
 
-import {
-    Image,
-    Dimensions,
-    Text,
-    TouchableOpacity,
-    StyleSheet,
-} from "react-native";
+// #region Local Imports
 import RouterActions from "@Services/RouterActions";
 import { HomeActions } from "@Actions";
-import { IHomePage } from "@Interfaces";
-
-// Local Styles
+import { Heading } from "@Components";
 import {
     Container,
     Apod,
@@ -24,9 +19,11 @@ import {
     Buttons,
     LocaleButtonText,
 } from "./styled";
+// #endregion Local Imports
 
-import { Heading } from "@Components";
-import { useTranslation } from "react-i18next";
+// #region Interface Imports
+import { IHomePage } from "@Interfaces";
+// #endregion Interface Imports
 
 const styles = StyleSheet.create({
     stretch: {
