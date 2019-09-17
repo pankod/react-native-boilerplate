@@ -15,6 +15,7 @@
         "importHelpers": true,
         "target": "esnext",
         "baseUrl": ".",
+        "resolveJsonModule": true,
         "paths": {
             "@Actions": ["src/Actions"],
             "@Components/*": ["src/Components/*"],
