@@ -11,6 +11,6 @@ export const Container = styled.View`
 
 export const ApodImage = styled.Image`
     display: flex;
-    height: ${({ theme }) => theme.dimensions.screenWidth};
-    width: ${({ theme }) => theme.dimensions.screenHeight};
+    width: ${({ theme }) => theme.dimensions.screenWidth};
+    height: ${({ theme }) => theme.dimensions.screenHeight};
 `;
