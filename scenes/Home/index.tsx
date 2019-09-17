@@ -68,12 +68,12 @@ const Home: React.FunctionComponent<IHomePage.IProps> = () => {
             />
             <Middle>
                 <Centered>
-                    <Heading text={t("Hello")} />
+                    <Heading text={t("common:Hello")} />
                     <Buttons>{renderLocaleButtons(i18n.language)}</Buttons>
                 </Centered>
                 <Apod>
                     <ApodButton onPress={() => handleApod()}>
-                        <ApodText>Discover Space</ApodText>
+                        <ApodText>{t("home:Space")}</ApodText>
                     </ApodButton>
                 </Apod>
             </Middle>

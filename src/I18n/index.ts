@@ -1,14 +1,15 @@
 // Global imports
 import { initReactI18next } from "react-i18next";
-// Local imports
 import i18next from "i18next";
 
-import { en, tr, es } from "@I18n/Languages";
+// #region Local imports
+import * as resources from "@I18n/locales";
+// #endregion Local imports
 
 const languageDetector = {
     type: "languageDetector",
     async: true,
-    detect: cb => cb("en"),
+    detect: (cb: Function) => cb("en"),
     init: () => {},
     cacheUserLanguage: () => {},
 };
@@ -19,17 +20,9 @@ i18next
     .init({
         fallbackLng: "en",
         debug: true,
-        resources: {
-            en: {
-                translation: en,
-            },
-            tr: {
-                translation: tr,
-            },
-            es: {
-                translation: es,
-            },
-        },
+        resources: resources.default,
+        ns: ["common"],
+        defaultNS: "common",
     });
 
 export const I18n = i18next;
