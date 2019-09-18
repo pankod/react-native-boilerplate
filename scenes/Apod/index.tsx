@@ -26,7 +26,7 @@ const Apod: React.FunctionComponent<IHomePage.IProps> = () => {
                         source={{
                             uri: home.image.url,
                         }}
-                        resizeMode={"contain"}
+                        resizeMode="contain"
                     />
                 )}
             </ContainerCenter>
