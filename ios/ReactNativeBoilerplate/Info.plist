@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>CodePushPublicKey</key>
+	<string>codepushkey</string>
 	<key>CFBundleDisplayName</key>
 	<string>ReactNativeBoilerplate</string>
 	<key>CFBundleExecutable</key>
