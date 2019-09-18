@@ -21,7 +21,7 @@ jobs:
       run: |
         cp .env.example .env
         npm install
-        npm lint
+        npm run lint
         npm test
       env:
         CI: true
