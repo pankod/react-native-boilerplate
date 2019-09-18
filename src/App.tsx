@@ -1,24 +1,24 @@
-//#region Global Imports
+// #region Global Imports
 import React, { Component } from "react";
 import { Provider } from "react-redux";
 import { ThemeProvider } from "styled-components";
 import codePush from "react-native-code-push";
 import BootSplash from "react-native-bootsplash";
-import { I18n } from "@I18n";
-//#endregion Global Imports
+// #endregion Global Imports
 
-//#region Local Imports
+// #region Local Imports
 import AppContainer from "@Router";
+import { I18n } from "@I18n";
 import configureStore from "@Redux/store";
 import RouterActions from "@Services/RouterActions";
 import { theme } from "@Definitions/Styled";
 import { SafeArea } from "@Styled";
-//#region Local Imports
+// #region Local Imports
 
 // Configure Store
 const store = configureStore({});
 
-export class App extends Component<{}> {
+class App extends Component<{}> {
     public componentDidMount(): void {
         I18n.init();
         BootSplash.hide();
