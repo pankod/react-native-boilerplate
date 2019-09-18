@@ -12,6 +12,7 @@
         "clear": "watchman watch-del-all && rm -rf /tmp/metro-bundler-cache-* && rm -rf /tmp/haste-map-react-native-packager-* && react-native start --reset-cache"
     },
     "dependencies": {
+        "@react-native-community/async-storage": "^1.6.1",
         "enzyme": "^3.10.0",
         "enzyme-adapter-react-16": "^1.14.0",
         "i18next": "^17.0.14",
