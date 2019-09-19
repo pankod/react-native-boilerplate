@@ -72,7 +72,6 @@ describe("Home action tests", () => {
             },
         ];
 
-        // eslint-disable-next-line
         await store.dispatch<any>(
             HomeActions.GetApod({ params: { hd: true } })
         );

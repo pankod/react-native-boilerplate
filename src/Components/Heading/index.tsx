@@ -1,10 +1,10 @@
-//#region Global Imports
+// #region Global Imports
 import * as React from "react";
-//#endregion Global Imports
+// #endregion Global Imports
 
-//#region Interface Imports
+// #region Interface Imports
 import { IHeading } from "./Heading";
-//#endregion Interface Imports
+// #endregion Interface Imports
 
 import { TitleText, FrontText, BackText } from "./styled";
 

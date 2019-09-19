@@ -7,11 +7,11 @@ import BootSplash from "react-native-bootsplash";
 // #endregion Global Imports
 
 // #region Local Imports
+import RouterActions from "@Services/RouterActions";
+import { theme } from "@Definitions/Styled";
 import AppContainer from "@Router";
 import { I18n } from "@I18n";
 import { configureStore } from "@Redux";
-import RouterActions from "@Services/RouterActions";
-import { theme } from "@Definitions/Styled";
 import { SafeArea } from "@Styled";
 // #region Local Imports
 

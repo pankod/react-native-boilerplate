@@ -1,5 +1,6 @@
 // #region Global Imports
 import { stringify } from "query-string";
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { API_KEY, API_URL } from "react-native-dotenv";
 import "isomorphic-fetch";
 // #endregion Global Imports
