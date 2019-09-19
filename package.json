@@ -9,7 +9,7 @@
         "android": "react-native run-android",
         "ios": "react-native run-ios",
         "format": "npm run lint -- --fix",
-        "pretty": "prettier --write --config .prettierrc.js {scenes,src}/**/*.{ts,tsx}",
+        "pretty": "prettier --write --config .prettierrc.js ./{scenes,src}/**/*.{ts,tsx}",
         "clear": "watchman watch-del-all && rm -rf /tmp/metro-bundler-cache-* && rm -rf /tmp/haste-map-react-native-packager-* && react-native start --reset-cache"
     },
     "dependencies": {
