@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components Heading should match snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+        "justifyContent": "center",
+        "position": "relative",
+        "textAlign": "center",
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "white",
+          "fontSize": 35,
+          "fontWeight": "bold",
+          "position": "absolute",
+        },
+      ]
+    }
+  >
+    World
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "grey",
+          "fontSize": 80,
+          "fontWeight": "bold",
+          "letterSpacing": 1,
+          "lineHeight": 86,
+          "zIndex": -1,
+        },
+      ]
+    }
+  >
+    World
+  </Text>
+</View>
+`;
