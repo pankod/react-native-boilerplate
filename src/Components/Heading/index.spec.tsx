@@ -1,6 +1,6 @@
 // #region Global Imports
 import * as React from "react";
-import { renderWithTheme } from "@Test/Helpers/styled";
+import { renderWithProviders } from "@Test/Helpers/render";
 import { shallow } from "enzyme";
 // #endregion Global Imports
 
@@ -13,7 +13,7 @@ describe("Components", () => {
         // const wrap = renderer.create(<Heading text="World" />).toJSON();
 
         it("should match snapshot", () => {
-            const wrapper = renderWithTheme(<Heading text="World" />);
+            const wrapper = renderWithProviders(<Heading text="World" />);
 
             expect(wrapper).toMatchSnapshot();
         });
