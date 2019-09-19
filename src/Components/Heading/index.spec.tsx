@@ -6,7 +6,6 @@ import { shallow } from "enzyme";
 
 // #region Local Imports
 import { Heading } from "@Components";
-
 // #endregion Local Imports
 
 describe("Components", () => {

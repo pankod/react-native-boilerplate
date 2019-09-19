@@ -15,5 +15,6 @@ module.exports = {
         "^@(Test)(.*)$": "<rootDir>/test/$2",
         "^@([A-Z].*)$": "<rootDir>/src/$1",
     },
-    testEnvironment: 'jsdom',
+    testEnvironment: "jsdom",
+    transformIgnorePatterns: ["node_modules/?!(react-native)"],
 };
