@@ -19,7 +19,7 @@
         "paths": {
             "@Actions": ["src/Actions"],
             "@Components/*": ["src/Components/*"],
-            "@Componenets": ["src/Components"],
+            "@Components": ["src/Components"],
             "@Definitions/*": ["src/Definitions/*"],
             "@Definitions": ["src/Definitions"],
             "@Styled/*": ["src/Styled/*"],
