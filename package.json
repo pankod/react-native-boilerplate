@@ -5,7 +5,7 @@
     "scripts": {
         "start": "react-native start",
         "test": "jest",
-        "lint": "eslint ./{scenes,src}/**/*.{ts,tsx}",
+        "lint": "eslint './{scenes,src}/**/*.{ts,tsx}'",
         "android": "react-native run-android",
         "ios": "react-native run-ios",
         "format": "npm run lint -- --fix",
@@ -17,7 +17,9 @@
         "enzyme": "^3.10.0",
         "enzyme-adapter-react-16": "^1.14.0",
         "i18next": "^17.0.14",
+        "isomorphic-fetch": "^2.2.1",
         "nock": "^11.3.4",
+        "query-string": "^6.8.3",
         "react": "16.8.6",
         "react-i18next": "^10.12.4",
         "react-native": "0.60.5",
