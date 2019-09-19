@@ -10,7 +10,7 @@ import Apod from "@Scenes/Apod";
 
 const AppStackNavigator = createStackNavigator({
     Home: {
-        navigationOptions: ({ navigation }) => ({
+        navigationOptions: () => ({
             title: "Home",
             headerStyle: {
                 backgroundColor: theme.colors.primary,
@@ -20,7 +20,7 @@ const AppStackNavigator = createStackNavigator({
         screen: Home,
     },
     Apod: {
-        navigationOptions: ({ navigation }) => ({
+        navigationOptions: () => ({
             title: "Apod",
             headerStyle: {
                 backgroundColor: theme.colors.primary,

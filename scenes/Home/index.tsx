@@ -19,11 +19,14 @@ import {
     Buttons,
     LocaleButtonText,
 } from "./styled";
+
 // #endregion Local Imports
 
 // #region Interface Imports
 import { IHomePage } from "@Interfaces";
 // #endregion Interface Imports
+
+const pankodLogo = require("static/images/pankod-logo.png");
 
 const styles = StyleSheet.create({
     stretch: {
@@ -59,10 +62,7 @@ const Home: React.FunctionComponent<IHomePage.IProps> = () => {
 
     return (
         <Container>
-            <Image
-                style={styles.stretch}
-                source={require("/static/images/pankod-logo.png")}
-            />
+            <Image style={styles.stretch} source={pankodLogo} />
             <Middle>
                 <Centered>
                     <Heading text={t("common:Hello")} />

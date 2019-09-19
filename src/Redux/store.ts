@@ -1,12 +1,14 @@
-// Global imports
+// #region Global imports
 import AsyncStorage from "@react-native-community/async-storage";
 import { applyMiddleware, compose, createStore } from "redux";
 import { createLogger } from "redux-logger";
 import thunk from "redux-thunk";
 import { persistStore, persistReducer } from "redux-persist";
+// #endregion Global imports
 
-// Local imports
+// #region Local imports
 import RootReducer from "@Redux/Reducers";
+// #endregion Local imports
 
 declare const window: any;
 
@@ -19,7 +21,7 @@ const persistConfig = {
 const persistedReducer = persistReducer(persistConfig, RootReducer);
 
 // Create Store
-const configureStore = (preloadedState: object) => {
+export const configureStore = (preloadedState: object) => {
     const middlewares: Array<object> = [thunk];
 
     if (process.env.NODE_ENV === "development") {
@@ -35,9 +37,7 @@ const configureStore = (preloadedState: object) => {
         preloadedState,
         composeEnhancers(...composed)
     );
-    const persistedStore = persistStore(store);
+    persistStore(store);
 
     return store;
 };
-
-export default configureStore;
