@@ -34,7 +34,8 @@
             "@Redux": ["src/Redux"],
             "@Services/*": ["src/Services/*"],
             "@Services": ["src/Services"],
-            "@Scenes/*": ["scenes/*"]
+            "@Scenes/*": ["scenes/*"],
+            "@Test/*": ["test/*"]
         }
     },
     "filesGlob": ["typings/index.d.ts", "src/**/*.ts", "src/**/*.tsx"],

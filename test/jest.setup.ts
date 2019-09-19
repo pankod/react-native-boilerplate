@@ -2,6 +2,8 @@
 import enzyme from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import nock from "nock";
+import "jest-styled-components";
+
 
 enzyme.configure({ adapter: new Adapter() });
 
