@@ -1,5 +1,5 @@
 // #region Local Imports
-import { Http } from ".";
+import { Http } from "./index";
 // #endregion Local Imports
 
 describe("Http request tests", () => {

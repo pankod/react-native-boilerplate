@@ -1,4 +1,4 @@
-import { ActionConsts } from ".";
+import { ActionConsts } from "./index";
 
 describe("Action constants", () => {
     describe("Home", () => {

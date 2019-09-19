@@ -10,6 +10,7 @@ import { TitleText, FrontText, BackText } from "./styled";
 
 const Heading: React.FunctionComponent<IHeading.IProps> = props => {
     const { text } = props;
+
     return (
         <TitleText>
             <FrontText>{text}</FrontText>

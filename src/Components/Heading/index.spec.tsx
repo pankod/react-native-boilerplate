@@ -15,6 +15,7 @@ describe("Components", () => {
         it("should render FrontText and  BackText without throwing an error", () => {
             expect(wrap.children().length).toEqual(2);
         });
+
         it("FrontText should equal World", () => {
             expect(
                 wrap
