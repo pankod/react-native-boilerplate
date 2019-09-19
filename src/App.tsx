@@ -1,7 +1,7 @@
 // #region Global Imports
 import React, { Component } from "react";
 import { Provider } from "react-redux";
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components/native";
 import codePush from "react-native-code-push";
 import BootSplash from "react-native-bootsplash";
 // #endregion Global Imports
