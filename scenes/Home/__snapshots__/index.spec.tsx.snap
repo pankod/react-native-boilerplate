@@ -1,0 +1,269 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Scenes Home should match snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#2c3e50",
+        "display": "flex",
+        "flexDirection": "column",
+        "height": "100%",
+        "justifyContent": "flex-start",
+      },
+    ]
+  }
+>
+  <Image
+    source={
+      Object {
+        "default": Object {},
+      }
+    }
+    style={
+      Object {
+        "resizeMode": "contain",
+        "width": 700,
+      }
+    }
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "space-around",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "justifyContent": "center",
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "display": "flex",
+              "flexDirection": "column",
+              "justifyContent": "center",
+              "position": "relative",
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "white",
+                "fontSize": 35,
+                "fontWeight": "bold",
+                "position": "absolute",
+              },
+            ]
+          }
+        >
+          common:Hello
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "grey",
+                "fontSize": 80,
+                "fontWeight": "bold",
+                "letterSpacing": 1,
+                "lineHeight": 86,
+                "zIndex": -1,
+              },
+            ]
+          }
+        >
+          common:Hello
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#f9da2e",
+              "borderRadius": 8,
+              "color": "#4b6c8d",
+              "display": "flex",
+              "flexDirection": "row",
+              "height": 46,
+              "justifyContent": "space-around",
+              "letterSpacing": 0,
+              "marginLeft": 15,
+              "paddingBottom": 10,
+              "paddingLeft": 5,
+              "paddingRight": 5,
+              "paddingTop": 10,
+              "width": 100,
+            },
+          ]
+        }
+      >
+        <View
+          accessible={true}
+          clickable={true}
+          isTVSelectable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            isActive={false}
+            style={
+              Array [
+                Object {
+                  "color": "#4b6c8d",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                },
+              ]
+            }
+          >
+            en
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          clickable={true}
+          isTVSelectable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            isActive={false}
+            style={
+              Array [
+                Object {
+                  "color": "#4b6c8d",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                },
+              ]
+            }
+          >
+            es
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          clickable={true}
+          isTVSelectable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            isActive={false}
+            style={
+              Array [
+                Object {
+                  "color": "#4b6c8d",
+                  "fontSize": 20,
+                  "fontWeight": "500",
+                },
+              ]
+            }
+          >
+            tr
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+          },
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        clickable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#f9da2e",
+            "borderRadius": 5,
+            "color": "#2c3e50",
+            "opacity": 1,
+            "paddingBottom": 5,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 5,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#2c3e50",
+                "fontSize": 30,
+                "fontWeight": "500",
+              },
+            ]
+          }
+        >
+          home:Space
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

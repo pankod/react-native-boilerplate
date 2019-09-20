@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Scenes Home should match snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#2c3e50",
+        "display": "flex",
+        "flexDirection": "column",
+        "height": "100%",
+        "justifyContent": "flex-start",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "justifyContent": "center",
+        },
+      ]
+    }
+  >
+    <ActivityIndicator
+      animating={true}
+      color="#fff"
+      hidesWhenStopped={true}
+      size="large"
+    />
+  </View>
+</View>
+`;
