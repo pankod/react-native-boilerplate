@@ -110,6 +110,8 @@ npm install
 **ios**
 
  ```
+ cd ios && pod install
+
  npm run ios
  ```
  
