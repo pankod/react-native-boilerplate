@@ -15,6 +15,12 @@
   "dependencies": {
     "react": "16.11.0",
     "react-native": "0.62.2",
+    "react-native-flipper": "^0.45.0",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-flipper": "^1.2.0",
+    "redux-thunk": "^2.3.0",
     "styled-components": "^5.1.1",
     "styled-system": "^5.1.5"
   },
@@ -29,6 +35,7 @@
     "@storybook/react-native-server": "^5.3.19",
     "@types/jest": "^24.0.24",
     "@types/react-native": "^0.62.0",
+    "@types/react-redux": "^7.1.9",
     "@types/react-test-renderer": "16.9.2",
     "@types/styled-components": "^5.1.0",
     "@types/styled-system": "^5.1.9",

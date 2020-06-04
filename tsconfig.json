@@ -39,7 +39,13 @@
     "baseUrl": "./" /* Base directory to resolve non-absolute module names. */,
     "paths": {
       "@Components/*": ["src/Components/*"],
-      "@Components": ["src/Components"]
+      "@Components": ["src/Components"],
+      "@Definitions/*": ["src/Definitions/*"],
+      "@Definitions": ["src/Definitions"],
+      "@Redux/*": ["src/Redux/*"],
+      "@Redux": ["src/Redux"],
+      "@Interfaces/*": ["src/Interfaces/*"],
+      "@Interfaces": ["src/Interfaces"]
     },
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
     // "typeRoots": [],                       /* List of folders to include type definitions from. */

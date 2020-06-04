@@ -7,6 +7,9 @@ module.exports = {
                 root: ["."],
                 alias: {
                     "@Components": "./src/Components",
+                    "@Definitions": "./src/Definitions",
+                    "@Interfaces": "./src/Interfaces",
+                    "@Redux": "./src/Redux",
                 },
             },
         ],
