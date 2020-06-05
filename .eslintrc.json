@@ -3,6 +3,7 @@
   "extends": [
     "@react-native-community",
     "prettier/@typescript-eslint",
+    "plugin:jest/recommended",
     "plugin:prettier/recommended"
   ],
   "rules": {
@@ -11,7 +12,9 @@
     "react/jsx-indent-props": [2, 4],
     "import/prefer-default-export": "off",
     "import/no-cycle": "off",
-    "no-multi-assign": "off"
+    "no-multi-assign": "off",
+    "jest/no-disabled-tests": "off",
+    "jest/no-test-prefixes": "off"
   },
   "settings": {
     "import/parsers": {
@@ -19,5 +22,5 @@
     }
   },
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"]
+  "plugins": ["@typescript-eslint", "jest"]
 }

@@ -6,10 +6,12 @@ module.exports = {
             {
                 root: ["."],
                 alias: {
+                    "@Actions": "./src/Actions",
                     "@Components": "./src/Components",
                     "@Definitions": "./src/Definitions",
                     "@Interfaces": "./src/Interfaces",
                     "@Redux": "./src/Redux",
+                    "@Services": "./src/Services",
                 },
             },
         ],
