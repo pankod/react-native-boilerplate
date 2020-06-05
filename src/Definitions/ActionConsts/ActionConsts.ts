@@ -4,4 +4,11 @@ export const ActionConsts = {
         Success: "[FEED] SUCCESS",
         Failed: "[FEED] FAILED",
     },
+    Post: {
+        List: {
+            Request: "[POST / LIST] REQUEST",
+            Success: "[POST / LIST] SUCCESS",
+            Failed: "[POST / LIST] FAILED",
+        },
+    },
 };
