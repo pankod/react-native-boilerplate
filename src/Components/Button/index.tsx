@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { Text } from "react-native";
 
 import { TouchableOpacity, TouchableOpacityType, View } from "./styled";
@@ -10,9 +10,9 @@ export type Props = TouchableOpacityType & {
 
 export const Button: React.FC<Props> = ({ ...otherProps }) => {
     return (
-        <TouchableOpacity {...otherProps}>
+        <TouchableOpacity testID="btn" {...otherProps}>
             <View>
-                <Text>Submit</Text>
+                <Text testID="btn-text">Submit</Text>
             </View>
         </TouchableOpacity>
     );
