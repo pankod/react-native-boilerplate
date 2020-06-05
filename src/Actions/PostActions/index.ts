@@ -19,6 +19,11 @@ export const PostActions = {
             return;
         }
 
-        dispatch({ type: ActionConsts.Post.List.Success, payload: data });
+        dispatch({
+            type: ActionConsts.Post.List.Success,
+            payload: {
+                data: data,
+            },
+        });
     },
 };

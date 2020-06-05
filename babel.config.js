@@ -12,6 +12,7 @@ module.exports = {
                     "@Interfaces": "./src/Interfaces",
                     "@Redux": "./src/Redux",
                     "@Services": "./src/Services",
+                    "@Screens": "./src/Screens",
                 },
             },
         ],

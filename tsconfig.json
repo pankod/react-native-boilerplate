@@ -49,7 +49,9 @@
       "@Interfaces/*": ["src/Interfaces/*"],
       "@Interfaces": ["src/Interfaces"],
       "@Services/*": ["src/Services/*"],
-      "@Services": ["src/Services"]
+      "@Services": ["src/Services"],
+      "@Screens/*": ["src/Screens/*"],
+      "@Screens": ["src/Screens"]
     },
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
     // "typeRoots": [],                       /* List of folders to include type definitions from. */

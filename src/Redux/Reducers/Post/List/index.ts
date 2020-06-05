@@ -1,25 +1,28 @@
 import { ActionConsts } from "@Definitions";
-import { IFeedReducer } from "@Interfaces";
+import { IPostListReducer } from "@Interfaces";
 import { ApiStatus } from "@Interfaces/enum";
 
-const INITIAL_STATE: IFeedReducer.State = {
+const INITIAL_STATE: IPostListReducer.State = {
     status: ApiStatus.init,
+    data: [],
 };
 
-export const FeedReducer = (state = INITIAL_STATE, action: any) => {
+export const POST_LIST_STATE = INITIAL_STATE;
+
+export const PostListReducer = (state = INITIAL_STATE, action: any) => {
     switch (action.type) {
-        case ActionConsts.Feed.Request:
+        case ActionConsts.Post.List.Request:
             return {
                 ...state,
                 status: ApiStatus.loading,
             };
-        case ActionConsts.Feed.Success:
+        case ActionConsts.Post.List.Success:
             return {
                 ...state,
                 ...action.payload,
                 status: ApiStatus.loaded,
             };
-        case ActionConsts.Feed.Failed:
+        case ActionConsts.Post.List.Failed:
             return {
                 ...state,
                 error: action.error,

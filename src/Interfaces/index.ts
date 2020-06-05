@@ -1,5 +1,9 @@
-// Reducers
-export * from "@Interfaces/Reducers/Feed";
+// ##### Reducers ##### //
+// Post
+export * from "@Interfaces/Reducers/Post/List";
 
-// Services
+// ##### Services ##### //
 export * from "@Services/Post/Post";
+
+// ##### IStore ##### //
+export * from "@Redux/IStore";

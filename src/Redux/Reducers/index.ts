@@ -1,9 +1,9 @@
 import { combineReducers } from "redux";
 
-import { FeedReducer } from "@Redux/Reducers/feed";
+import PostReducer from "@Redux/Reducers/Post";
 
 const RootReducer = combineReducers({
-    feed: FeedReducer,
+    post: PostReducer,
 });
 
 export default RootReducer;
