@@ -6,6 +6,8 @@ export const PostActions = {
     List: () => async (dispatch: Dispatch) => {
         dispatch({ type: ActionConsts.Post.List.Request });
 
+        // ? ok: STATUS_CODE === 200
+        // ? data: response payload
         const { ok, data } = await PostService.List();
 
         if (!ok || !data) {

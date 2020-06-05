@@ -12,7 +12,7 @@ export namespace Post {
 
     type List = Array<PostItem>;
 
-    interface Service {
+    type Service = {
         List: () => Response<List>;
-    }
+    };
 }
