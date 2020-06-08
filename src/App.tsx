@@ -6,9 +6,12 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Home, Settings } from "@Screens";
 import { makeStore } from "@Redux/store";
 
+import { I18n } from "@I18n";
 const store = makeStore();
 
 const App = () => {
+    I18n.init();
+
     const Tab = createBottomTabNavigator();
     return (
         <Provider store={store}>
