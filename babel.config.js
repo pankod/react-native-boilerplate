@@ -13,6 +13,7 @@ module.exports = {
                     "@Redux": "./src/Redux",
                     "@Services": "./src/Services",
                     "@Screens": "./src/Screens",
+                    "@I18n": "./src/I18n",
                 },
             },
         ],

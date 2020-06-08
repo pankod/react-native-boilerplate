@@ -10,8 +10,8 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "format": "prettier --write --config .prettierrc.json 'src/**/*.{ts,tsx}'",
     "format:check": "prettier -c --config .prettierrc.json 'src/**/*.{ts,tsx}'",
-    "rnstl": "node_modules/react-native-storybook-loader/src/rnstl-cli.js",
-    "storybook": "watch rnstl ./src --wait=100 | start-storybook -p 7007 | react-native start --projectRoot storybook --watchFolders $PWD"
+    "storybook": "start-storybook",
+    "svgr": "svgr ./assets/icons -d ./src/Components/Icons --native --typescript --ignore-existing --svgo-config .svgorc.json"
   },
   "config": {
     "react-native-storybook-loader": {
@@ -27,12 +27,15 @@
     "@react-navigation/bottom-tabs": "^5.5.1",
     "@react-navigation/native": "^5.5.0",
     "apisauce": "^1.1.1",
+    "i18next": "^19.4.5",
     "react": "16.11.0",
+    "react-i18next": "^11.5.0",
     "react-native": "0.62.2",
     "react-native-gesture-handler": "^1.6.1",
     "react-native-reanimated": "^1.9.0",
     "react-native-safe-area-context": "^3.0.2",
     "react-native-screens": "^2.8.0",
+    "react-native-svg": "^12.1.0",
     "react-redux": "^7.2.0",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
@@ -50,6 +53,7 @@
     "@storybook/addons": "^5.3.19",
     "@storybook/react-native": "^5.3.19",
     "@storybook/react-native-server": "^5.3.19",
+    "@svgr/cli": "^5.4.0",
     "@testing-library/react-native": "^5.0.3",
     "@types/jest": "^24.0.24",
     "@types/react-native": "^0.62.0",
